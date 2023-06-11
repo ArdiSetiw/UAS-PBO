@@ -1,0 +1,78 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 22, 2023, 5:41:56 PM
+    Author     : Ardi Setyiawan
+*/
+
+.page{
+    -fx-border:4;
+    -fx-border-color:black;
+}
+
+.loginContainer{
+    -fx-background-color:white; 
+}
+
+.textBox{
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-border-radius : 2;
+    -fx-text-box-border: transparent;
+    -fx-border-color:#1FAF9F;
+    -fx-text-fill: black;
+}
+
+.textBox:focused{
+    -fx-border-style: hidden hidden hidden hidden;
+    -fx-focus-color:#1FAF9F;
+}
+
+
+.btnLogin{
+    -fx-color: #ffffff;
+    -fx-background-color: #1FAF9F;
+    -fx-background-radius : 15;
+    -fx-border: 2;
+    -fx-cursor: hand;
+    -fx-text-fill: white; 
+}
+
+.btnLogin:hover{
+    -fx-border-color:black;
+    -fx-border-radius :15 ;
+}
+
+.btnRegis{
+    -fx-color: #ffffff;
+    -fx-background-color: #1877F2;
+    -fx-background-radius : 15;
+    -fx-border: 2;
+    -fx-cursor: hand;
+    -fx-text-fill: white; 
+}
+
+.btnRegis:hover{
+    -fx-border-color:black;
+    -fx-border-radius :15 ;
+}
+
+.btnBack{
+    -fx-cursor: hand;
+}
+
+.profileContainer{
+    -fx-border:2;
+    -fx-border-color:#1FAF9F;
+    -fx-background-color:#e5e4e4;
+}
+
+.logout{
+    
+}
+
+.logout:hover{
+    -fx-border-color:black;
+    
+}
