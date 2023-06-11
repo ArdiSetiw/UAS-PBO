@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="508.0" prefWidth="814.0" styleClass="page" stylesheets="@Login.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="program.LoginController">
+   <children>
+      <AnchorPane fx:id="panelLogin" layoutX="486.0" layoutY="54.0" prefHeight="400.0" prefWidth="301.0" styleClass="loginContainer" stylesheets="@Login.css">
+         <children>
+            <TextField fx:id="txtUsername" layoutX="76.0" layoutY="120.0" prefHeight="26.0" prefWidth="150.0" promptText="Username" styleClass="textBox" stylesheets="@Login.css" />
+            <PasswordField fx:id="txtPassword" layoutX="76.0" layoutY="169.0" prefHeight="26.0" prefWidth="150.0" promptText="Password" styleClass="textBox" stylesheets="@Login.css" />
+            <Button fx:id="btnLogin" layoutX="75.0" layoutY="233.0" mnemonicParsing="false" onMouseClicked="#btnLogin_Clicked" prefHeight="37.0" prefWidth="150.0" styleClass="btnLogin" stylesheets="@Login.css" text="Masuk" />
+            <Button fx:id="btnOpenReg" layoutX="76.0" layoutY="285.0" mnemonicParsing="false" onMouseClicked="#btnOpenReg_Clicked" prefHeight="37.0" prefWidth="150.0" styleClass="btnRegis" stylesheets="@Login.css" text="Registrasi" />
+            <Label layoutX="113.0" layoutY="48.0" text="Login" textFill="#1faf9f">
+               <font>
+                  <Font name="Verdana Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="panelReg" layoutX="380.0" layoutY="54.0" prefHeight="400.0" prefWidth="407.0" styleClass="loginContainer" stylesheets="@Login.css" visible="false">
+         <children>
+            <TextField fx:id="txtNamaReg" layoutX="51.0" layoutY="104.0" promptText="Nama Lengkap" styleClass="textBox" stylesheets="@Login.css" />
+            <TextField fx:id="txtUsernameReg" layoutX="51.0" layoutY="157.0" promptText="Username" styleClass="textBox" stylesheets="@Login.css" />
+            <PasswordField fx:id="txtPasswordReg" layoutX="52.0" layoutY="213.0" promptText="Password" styleClass="textBox" stylesheets="@Login.css" />
+            <PasswordField fx:id="txtKPasswordReg" layoutX="51.0" layoutY="268.0" promptText="Konfirmasi Password" styleClass="textBox" stylesheets="@Login.css" />
+            <Button fx:id="btnReg" layoutX="128.0" layoutY="309.0" mnemonicParsing="false" onMouseClicked="#btnReg_Clicked" prefHeight="38.0" prefWidth="151.0" styleClass="btnLogin" stylesheets="@Login.css" text="Registrasi" />
+            <Label layoutX="146.0" layoutY="37.0" text="Registrasi" textFill="#1faf9f">
+               <font>
+                  <Font name="Verdana Bold" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="240.0" layoutY="132.0" prefHeight="148.0" prefWidth="160.0" styleClass="profileContainer" stylesheets="@Login.css">
+               <children>
+                  <ImageView fx:id="imgProfile" fitHeight="90.0" fitWidth="90.0" layoutX="35.0" layoutY="14.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../gambar/profile/default.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnPilihGambar" layoutX="5.0" layoutY="112.0" mnemonicParsing="false" onMouseClicked="#btnPilihGambar_Clicked" prefHeight="29.0" prefWidth="150.0" styleClass="btnLogin" stylesheets="@Login.css" text="Pilih Gambar" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="btnBack" layoutX="154.0" layoutY="350.0" onMouseClicked="#btnBack_Clicked" prefHeight="35.0" prefWidth="98.0" styleClass="btnBack" stylesheets="@Login.css">
+               <children>
+                  <Label alignment="CENTER" layoutX="7.0" layoutY="4.0" prefHeight="27.0" prefWidth="83.0" text="Kembali">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="btnClose" accessibleRole="BUTTON" fitHeight="27.0" fitWidth="23.0" layoutX="788.0" layoutY="3.0" onMouseClicked="#btnClose_Clicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/icon/close.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="123.0" fitWidth="123.0" layoutX="170.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/icon/medicine.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="146.0" layoutY="285.0" text="Batuk Solver" textFill="#1faf9f">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="123.0" fitWidth="52.0" layoutX="158.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/icon/medicine.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="62.0" fitWidth="74.0" layoutX="247.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/icon/medicine.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="163.0" layoutY="315.0" text="Make your batuk go away" />
+   </children>
+</AnchorPane>

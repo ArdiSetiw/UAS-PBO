@@ -1,0 +1,99 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 8, 2023, 11:33:50 AM
+    Author     : Ardi Setyiawan
+*/
+
+.btnNav{
+    -fx-cursor: hand;
+}
+
+.btnNav:hover{
+    -fx-border:2;
+    -fx-border-color:black;
+}
+
+.scrollPanel{
+    -fx-background-color:transparent;
+}
+
+.textBox{
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-border-radius : 2;
+    -fx-text-box-border: transparent;
+    -fx-border-color:#1FAF9F;
+    -fx-text-fill: black;
+}
+
+.textBox:focused{
+    -fx-border-style: hidden hidden hidden hidden;
+    -fx-focus-color:#1FAF9F;
+}
+
+.tambahContainer{
+    -fx-background-color:white; 
+}
+
+.tableView{
+    -fx-border-color:#1FAF9F;
+}
+
+.btn:hover{
+    -fx-border-color:black;
+    -fx-cursor:hand;
+}
+
+.table-view{
+    -fx-background-color:transparent;
+    -fx-border-color:black;
+    -fx-border-radius:0px;
+    -fx-padding:0px;
+}
+.table-view .table-column{
+    -fx-alignment:CENTER;
+}
+.table-view .column-header-background{
+    -fx-background-color:#1FAF9F;
+    -fx-background-insets: 0 0 0 0;
+    -f-background-radius:8px 8px 0px 0px;
+}
+.table-view .column-header, .filter{
+    -fx-background-color: transparent;
+    -fx-size:40px;
+}
+.table-view .column-header .label{
+    -fx-text-fill:#fff;
+    -fx-font-family:"Arial";
+}
+
+.table-view .cell{
+    -fx-border-width: 0;
+}
+
+.ComboBox{
+    -fx-background-color: #ffffff;
+    -fx-border-color:#1FAF9F;
+}
+
+.cbsosis > .list-cell{
+    -fx-background-color: #ffffff;
+    -fx-background-radius : 0;
+    -fx-text-fill: #981824;
+}
+
+.cbsosis > .arrow-button{
+    -fx-text-fill: #981824;
+}
+
+.cbsosis .list-cell:hover{
+    -fx-background-color: #981824;
+    -fx-text-fill: #ffffff;
+}
+
+.cbsosis .cell:selected{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #981824;
+}
